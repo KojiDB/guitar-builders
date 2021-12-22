@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   }
   root to: "builders#index"
 
-  resources :builders
+  resources :builders 
+  resources :guitars
+  
 end
