@@ -1,0 +1,21 @@
+<%= render "shared/second-header" %>
+<ul class='guitar-lists'>
+  <% @guitars.each do |guitar| %>
+  <li class='list2'>
+    <%= link_to guitar_path(guitar.id) do %>
+    <div class='guitar-img-content'>
+      <%= image_tag guitar.images, class: "guitar-img" %>
+    </div>
+    <div class='guitar-info'>
+      <h3 class='guitar-name'>
+        <%= guitar.guitar_name %>
+      </h3>
+      <div class='guitar-price'>
+        <span><%= guitar.price %>円</span>
+      </div>
+      <div class='guitar-builder-name'>
+        <%= guitar.builder.brand_name %>
+      </div>
+    <% end %>
+  <% end %>
+

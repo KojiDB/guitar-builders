@@ -43,7 +43,7 @@ class GuitarsController < ApplicationController
   private
 
   def guitar_params
-    params.require(:guitar).permit(:guitar_name, :guitar_type_id, :strings_number_id, :price, :features, :url).merge(builder_id: current_builder.id)
+    params.require(:guitar).permit(:guitar_name, :guitar_type_id, :strings_number_id, :price, :features, :url, :images).merge(builder_id: current_builder.id)
   end
 
   def find_guitar

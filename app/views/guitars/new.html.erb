@@ -1,0 +1,62 @@
+<%= render "shared/second-header" %>
+
+<div class="guitar-main">
+  <h2 class="guitar-title">製作物の情報を入力</h2>
+  <%= form_with model: @guitar, local: true do |f| %>
+
+  <div class="img-upload">
+    <div class="weight-bold-text">
+      画像
+      <span class="indispensable">必須</span>
+    </div>
+    <div class="click-upload">
+      <p>
+        クリックしてファイルをアップロード
+      </p>
+      <%= f.file_field :images, name: 'guitar[image]', id:"guitar-image" %>
+    </div>
+  </div>
+  <div class="new-guitars">
+    <div class="weight-bold-text">
+      名前
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :guitar_name, class:"guitars-text", id:"guitar-name", placeholder:"名前(25文字まで)", maxlength:"25" %>
+    <div class="guitars-explain">
+      <div class="weight-bold-text">
+      特徴
+      <span class="indispensable">必須</span>
+      </div>
+    <%= f.text_area :features, class:"guitars-text", id:"guitar-info", placeholder:"製作物の説明", rows:"7" %>
+    </div>
+  </div>
+
+  <div class="guitars-detail">
+    <div class="weight-bold-text">
+      ギターの種類
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:guitar_type_id, GuitarType.all, :id, :name, {}, {class:"select-box", id:"guitar-type"}) %>
+    <div class="weight-bold-text">
+      弦の数
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:strings_number_id, StringsNumber.all, :id, :name, {}, {class:"select-box", id:"strings-number"}) %>
+    <div class="weight-bold-text">
+      価格
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_field :price, class:"price-input", id:"guitar-price", placeholder:"例) 10万円" %>
+    <div class="weight-bold-text">
+      URL
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :url, class:"guitars-url", id:"guitar-url", placeholder:"ここに販売サイトのURLを入力してください" %>
+  </div>
+
+  <div class="sell-btn-contents">
+    <%= f.submit "出品する", class:"sell-btn" %>
+    <%= link_to '戻る', root_path, class:"back-btn"%>
+  </div>
+</div>
+<% end %>

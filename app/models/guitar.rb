@@ -8,6 +8,7 @@ class Guitar < ApplicationRecord
     validates :price
     validates :features
     validates :url
+    validates :images
   end
 
   with_options presence: true, numericality: { other_than: 1 } do
