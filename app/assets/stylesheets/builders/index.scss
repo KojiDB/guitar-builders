@@ -1,0 +1,92 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #f8f8f8;
+}
+.title-contents {
+  width: 100vw;
+  background-image: image-url('guitar1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.service-title {
+  font-size: 8vh;
+}
+
+.service-explain {
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+.builder-contents {
+  width: 100vw;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.builder-contents>.title {
+  font-size: 5vh;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.builder-contents>.subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.builder-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.builder-lists>.list {
+  width: 37vw;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+.builder-img-content {
+  position: relative;
+}
+
+.builder-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+.builder-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+}
+
+.builder-name {
+  font-size: 2.5vh;
+}
+
+.builder-area {
+  font-size: 2.0vh;
+}
+
+.builder-introduction {
+  font-size: 1.0vh;
+}

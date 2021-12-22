@@ -1,0 +1,19 @@
+.footer-image {
+  width: 100vw;
+  height: 30vh;
+  background-image: image-url('footer.image.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.footer-message {
+  font-size: 20px;
+}

@@ -1,0 +1,43 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      最高の楽器に出会えるアプリ
+    </h2>
+    <p class='service-explain'>
+      製作者とプレイヤーをつなげる
+    </p>
+    <p class='service-explain'>
+      コミュニケーションアプリです
+    </p>
+  </div>
+
+  <div class='builder-contents'>
+    <h2 class='title'>BUILDERS</h2>
+    <div class="subtitle">
+      製作者一覧
+    </div>
+    <ul class='builder-lists'>
+      <% @builder.each do |builder| %>
+      <li class='list'>
+        <%= link_to builder_path(builder.id) do %>
+        <div class='builder-img-content'>
+          <%= image_tag builder.images, class: "builder-img" %>
+
+          <div class='builder-info'>
+            <h3 class='builder-name'>
+              <%= builder.brand_name %>
+            </h3>
+            <div class='builder-area'>
+              <span><%= builder.area %></span>
+            </div>
+            <div class='builder-introduction'>
+              <span><%= builder.introduction %></span>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+
+</div>
+  <%= render "shared/footer" %>

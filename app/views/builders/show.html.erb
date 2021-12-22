@@ -1,0 +1,33 @@
+<%= render "shared/second-header" %>
+
+<div class="builder-show">
+  <div class="builder-box">
+    <h2 class="builder-name2">
+      <%= @builder.brand_name %>
+    </h2>
+    <div class="builder-img-content">
+      <%= image_tag @builder.images, class:"builder-box-img" %>
+    </div>
+    
+    <div class="builder-area2">
+      <%= @builder.area %>
+    </div>
+    <div class="builder-city">
+      <%= @builder.city%>
+    </div>
+    <div class="builder-introduction2">
+      <%= @builder.introduction %>
+    </div>
+    <div class="builder-price-zone">
+      <%= @builder.price_zone %>
+    </div>
+    <div class="builder-phone">
+      <%= @builder.phone %>
+    </div>
+    <div class="builder-order">
+      <span>オーダーメイド</span>
+      <%= @builder.private_order[:name] %>
+    </div>
+    
+  </div>
+</div>

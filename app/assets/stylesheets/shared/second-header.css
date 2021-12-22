@@ -1,0 +1,9 @@
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-header-logo {
+  width: 15vw;
+}

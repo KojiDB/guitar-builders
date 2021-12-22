@@ -1,0 +1,49 @@
+.builder-register {
+  width: 100vw;
+  background-color: #272727;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #FFF;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.builder-guidance {
+  justify-content: center;
+  color: #FFF;
+}
+
+.builder-log {
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.builder-name {
+  font-size: 12px;
+  color: #FFF;
+  margin-right: 10px;
+}
+
+.logout2 {
+  font-size: 12px;
+  color: #FFF;
+  margin-left: 10px;
+}
+
+.login2 {
+  font-size: 12px;
+  color: #FFF;
+  margin-right: 10px;
+}
+
+.sign-up2 {
+  font-size: 12px;
+  color: #FFF;
+  margin-left: 10px;
+}
