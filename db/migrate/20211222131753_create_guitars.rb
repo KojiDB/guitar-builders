@@ -6,7 +6,7 @@ class CreateGuitars < ActiveRecord::Migration[6.0]
       t.integer :strings_number_id,  null: false
       t.integer :price,              null: false
       t.text :features,              null: false
-      t.text :url,                   null: false
+      t.text :url
       t.references :builder,         null: false, foreign_key: true
 
       t.timestamps

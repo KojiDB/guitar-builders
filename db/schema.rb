@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2021_12_22_131753) do
     t.integer "strings_number_id", null: false
     t.integer "price", null: false
     t.text "features", null: false
-    t.text "url", null: false
+    t.text "url"
     t.bigint "builder_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
