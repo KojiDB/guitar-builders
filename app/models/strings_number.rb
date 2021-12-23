@@ -1,5 +1,5 @@
 class StringsNumber < ActiveHash::Base
-  self.date = [
+  self.data = [
     { id: 1, name: '---' },
     { id: 2, name: '6' },
     { id: 3, name: '7' },

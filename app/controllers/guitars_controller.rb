@@ -14,7 +14,7 @@ class GuitarsController < ApplicationController
   def create
     @guitar = Guitar.new(guitar_params)
     if @guitar.valid?
-      @suitar.save
+      @guitar.save
       redirect_to root_path
     else
       render :new

@@ -1,13 +1,15 @@
 /* border-bottom: 1px solid #eee; */
 
-.guitar-main {
+.guitar-main2 {
   background-color: #FFF;
-  width: 70vw;
+  width: 100vw;
   min-width: 450px;
   padding: 10vh 15vw;
+  justify-content: center;
+  align-items: center;
 }
 
-.guitar-title {
+.guitar-title2 {
   font-size: 22px;
   font-weight: bold;
   text-align: center;
@@ -41,7 +43,7 @@
 /* /共通 */
 
 /* 商品画像 */
-.img-upload {
+.img-upload2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -87,10 +89,6 @@
   padding: 2vh 0;
 }
 
-.guitars-detail>.form {
-  width: 300px;
-  padding: 2vh 0;
-}
 
 .select-box {
   margin: 2vh 0;
@@ -102,11 +100,6 @@
 
 
 
-.price-input {
-  height: 30px;
-  text-align: right;
-  padding-right: 10px;
-}
 
 /* /販売価格 */
 

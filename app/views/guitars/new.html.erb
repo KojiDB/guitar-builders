@@ -1,10 +1,10 @@
 <%= render "shared/second-header" %>
 
-<div class="guitar-main">
-  <h2 class="guitar-title">製作物の情報を入力</h2>
+<div class="guitar-main2">
+  <h2 class="guitar-title2">製作物の情報を入力</h2>
   <%= form_with model: @guitar, local: true do |f| %>
 
-  <div class="img-upload">
+  <div class="img-upload2">
     <div class="weight-bold-text">
       画像
       <span class="indispensable">必須</span>
@@ -49,13 +49,13 @@
     <%= f.text_field :price, class:"price-input", id:"guitar-price", placeholder:"例) 10万円" %>
     <div class="weight-bold-text">
       URL
-      <span class="indispensable">必須</span>
+      
     </div>
     <%= f.text_area :url, class:"guitars-url", id:"guitar-url", placeholder:"ここに販売サイトのURLを入力してください" %>
   </div>
 
   <div class="sell-btn-contents">
-    <%= f.submit "出品する", class:"sell-btn" %>
+    <%= f.submit "投稿する", class:"sell-btn" %>
     <%= link_to '戻る', root_path, class:"back-btn"%>
   </div>
 </div>

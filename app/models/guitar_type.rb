@@ -1,5 +1,5 @@
 class GuitarType < ActiveHash::Base
-  self.date = [
+  self.data = [
     { id: 1, name: '---' },
     { id: 2, name: 'Acoustic Guitar' },
     { id: 3, name: 'Electric Guitar' }

@@ -18,4 +18,6 @@ class Guitar < ApplicationRecord
 
   belongs_to :builder
 
+  has_one_attached :images
+
 end
