@@ -19,4 +19,5 @@ class Builder < ApplicationRecord
   validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i }
 
   has_one_attached :images
+  has_many :guitars
 end

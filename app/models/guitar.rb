@@ -7,8 +7,7 @@ class Guitar < ApplicationRecord
     validates :guitar_name
     validates :price
     validates :features
-    validates :url
-    validates :images
+    validates :guitar_images
   end
 
   with_options presence: true, numericality: { other_than: 1 } do
@@ -18,6 +17,6 @@ class Guitar < ApplicationRecord
 
   belongs_to :builder
 
-  has_one_attached :images
+  has_one_attached :guitar_images
 
 end
